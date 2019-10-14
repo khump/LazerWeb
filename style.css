@@ -1,0 +1,122 @@
+body {
+  background-color: lightgray;
+  margin: 0;
+  font-weight: 400;
+  font-family: sans-serif;
+  overflow: auto;
+}
+main {
+  text-align: center;
+  font-size: 25px;
+}
+input {
+  outline: none;
+}
+.container {
+  width: 97.5%;
+  margin: 0 auto;
+  /* overflow: hidden;*/
+  position: fixed;
+  top: 0;
+  background-color: white;
+  padding-right: 2.5%
+}
+header {
+  background-color: white;
+  font-family: 'Burbank Big Condensed';
+  font-size: 25px;
+}
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.logo {
+  float: left;
+  padding: 18px 0;
+  margin-left: 3%;
+}
+nav {
+  float: right;
+  height: 50px;
+  margin-left: 3%;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  /*display:inline-block;*/
+  margin-left: 50px;
+  padding-top: 19px;
+  position: relative;
+}
+nav a {
+  color: black;
+  font-family: 'Burbank Big Condensed';
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 29px;
+}
+nav a:hover {
+  color: rgba(14, 13, 13, 0.342);
+}
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 0%;
+}
+nav a:hover::before {
+  width: 100%;
+}
+.mobile-view {
+  display: none;
+  padding-top: 15px;
+}
+.mobile-view:hover {
+  cursor: pointer;
+}
+.desktop-view ul li {
+  display: inline-block;
+}
+@media (min-width:401px) and (max-width:768px) {
+  .mobile-view {
+    display: block;
+    float: right;
+  }
+  .desktop-view {
+    display: none;
+  }
+  .expand {
+    display: block;
+  }
+  .desktop-view ul li {
+    display: block;
+  }
+  nav a:hover::before {
+    width: 0%;
+  }
+}
+@media (max-width:400px) {
+  .mobile-view {
+    display: block;
+    float: right;
+  }
+  .desktop-view {
+    display: none;
+  }
+  .expand {
+    display: block;
+  }
+  .desktop-view ul li {
+    display: block;
+  }
+  nav a:hover::before {
+    width: 0%;
+  }
+}
