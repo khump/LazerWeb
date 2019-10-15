@@ -1,6 +1,7 @@
 @font-face {
-    font-family: 'Burbank Big Condensed';
-    src: local("fonts/Burbank.otf") format("opentype");
+    font-family: 'BurbankBigCondensed';
+    src: url("fonts/Burbank.otf");
+    font-weight: bold;
 }
 body {
   background-color: lightgray;
@@ -27,7 +28,7 @@ input {
 }
 header {
   background-color: white;
-  font-family: 'Burbank Big Condensed';
+  font-family: 'BurbankBigCondensed';
   font-size: 25px;
 }
 header::after {
@@ -58,7 +59,7 @@ nav li {
 }
 nav a {
   color: black;
-  font-family: 'Burbank Big Condensed';
+  font-family: 'BurbankBigCondensed';
   text-decoration: none;
   text-transform: uppercase;
   font-size: 29px;
