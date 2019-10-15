@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'BurbankBigCondensed';
     src: url("fonts/Burbank.otf");
-    font-weight: bold;
+    font-weight: normal;
 }
 body {
   background-color: lightgray;
