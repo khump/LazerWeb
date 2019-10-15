@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Burbank Big Condensed';
+    src: url("fonts/Burbank.otf") format("opentype");
+}
 body {
   background-color: lightgray;
   margin: 0;
