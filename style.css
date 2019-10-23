@@ -90,6 +90,10 @@ nav a:hover::before {
 .desktop-view ul li {
   display: inline-block;
 }
+.socialLinks{
+  display: inline-flex;
+  align-content: center;
+}
 @media (min-width:401px) and (max-width:768px) {
   .mobile-view {
     display: block;
