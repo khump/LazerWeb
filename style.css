@@ -1,4 +1,10 @@
 @font-face {
+font-family: 'Billabong';
+font-style: normal;
+font-weight: normal;
+src: local('Billabong'), url('fonts/Billabong.woff') format('woff');
+}
+@font-face {
     font-family: 'BurbankBigCondensed';
     src: url("fonts/Burbank.otf");
     font-weight: lighter;
@@ -9,7 +15,6 @@ body {
   font-weight: 400;
   font-family: sans-serif;
   overflow: auto;
-  z-index: -1;
 }
 main {
   text-align: center;
@@ -91,8 +96,88 @@ nav a:hover::before {
   display: inline-block;
 }
 .socialLinks{
-  display: inline-flex;
-  align-content: center;
+  margin-top: 10%;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.socialLinks ul{
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  justify-content: center;
+}
+.instagramLinkDiv{
+  margin: 50px;
+}
+.instagramLink{
+  text-decoration: none;
+  vertical-align: top;
+  font-family: Billabong;
+  font-size: 450%;
+  color: black;
+}
+.instagramLink:hover{
+  color: rgb(66, 66, 66);
+}
+.socials-instagram{
+  width: 78px;
+}
+.twitterLinkDiv{
+  margin: 50px;
+}
+.twitterLink{
+  text-decoration: none;
+  vertical-align: top;
+  font-family: Billabong;
+  font-size: 450%;
+  color: black;
+}
+.twitterLink:hover{
+  color: rgb(66, 66, 66);
+}
+.socials-twitter{
+  width: 95px;
+}
+.youtubeLinkDiv{
+  margin: 50px;
+}
+.youtubeLink{
+  text-decoration: none;
+  vertical-align: top;
+  font-family: Billabong;
+  font-size: 450%;
+  color: black;
+}
+.youtubeLink:hover{
+  color: rgb(66, 66, 66);
+}
+.socials-youtube{
+  width: 90px;
+}
+.socials {
+  position: relative;
+  display: inline-block;
+}
+.socials .socials-solid {
+  display: none;
+  position: absolute;
+  top: -65px;
+  z-index: 99;
+}
+.socials .socials-outline {
+  display: block;
+  position: absolute;
+  top: -65px;
+  z-index: 99;
+}
+.socials:hover .socials-solid {
+  display: block;
+}
+.socials:hover .socials-outline {
+  display: none;
 }
 @media (min-width:401px) and (max-width:768px) {
   .mobile-view {
@@ -111,6 +196,21 @@ nav a:hover::before {
   nav a:hover::before {
     width: 0%;
   }
+  .socialLinks{
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  .socialLinks ul{
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
 }
 @media (max-width:400px) {
   .mobile-view {
@@ -128,5 +228,20 @@ nav a:hover::before {
   }
   nav a:hover::before {
     width: 0%;
+  }
+  .socialLinks{
+    margin-top: 10%;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+  }
+  .socialLinks ul{
+    padding: 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
   }
 }
